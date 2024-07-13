@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CBDC Carbon Reporting Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="tabulator.min.css" rel="stylesheet">
+    <link href="tabulator_simple.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+      <div class="top-header border-b border-b-stone-300 px-4 flex flex-row justify-between sci-header">
+        <p class="brand text-emerald-700 font-semibold"><a href="https://github.com/rollthecloudinc/vial-cbdc"><span class="github">Github</span> <svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="inline mb-1"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></p>
+        <div class="emissions">
+          <dl class="flex items-center h-full">
+            <dt>Emissions:</dt>
+            <dd class="mr-6 ml-1">100g</dd>
+            <dt class="text-emerald-700 offset">Offset:</dt>
+            <dd class="mr-6 text-emerald-700 ml-1 offset">50g</dd>
+            <dt>Remaining:</dt>
+            <dd class="ml-1 mr-6">50g</dd>
+            <dt>
+              <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                Contribute
+              </button>
+            </dt>
+          </dl>
+        </div>
+        <!-- <div class="spacer"></div> -->
+        <div class="flex items-center h-full contribute">
+          <a class="brand text-slate-600 font-medium tracking-wide hover:text-emerald-700 mr-6 rtc-brand" href="https://github.com/rollthecloudinc">a Roll The Cloud Inc. initiative <svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="inline mb-1"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a>
+         <!-- <form action="https://www.paypal.com/donate" method="POST" target="_top">
+            <input type="hidden" name="hosted_button_id" value="84YQP5Z9AUZYY" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <button type="submit"><img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" /></button>
+          </form> -->
+        </div>
+      </div>
+      <div class="vial-brand-container">
+        <div class="help"><span>i</span><div></div></div>
+        <img src="vial_web_identity.svg" class="vial-brand">
+      </div>
+    </div>
+    <div class="charts">
+      <div>
+        <div>
+          <div id="total-emissions-by-day" class="chart"></div>
+          <div class="help"><span>i</span><div></div></div>
+        </div>
+        <div>
+          <div id="radial-emissions-summary" class="chart"></div>
+          <div class="help"><span>i</span><div></div></div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div id="radial-heat-map" class="chart"></div>
+          <div class="help"><span>i</span><div></div></div>
+        </div>
+        <div>
+          <div id="datagrid"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

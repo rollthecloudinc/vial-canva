@@ -1,0 +1,26 @@
+//first define any variables you want to overrides
+$backgroundColor: transparent; //change background color of table
+$rowBackgroundColor: transparent;
+$rowAltBackgroundColor: transparent;
+$rowBorderColor: transparent;
+$cellBorderColor: #3b3b3b;
+$rowTextColor: white;
+$borderColor: transparent;
+$headerBackgroundColor: transparent;
+$headerBorderColor: #3b3b3b;
+$headerSeparatorColor: transparent;
+$borderColor: transparent;
+$footerBorderColor: #3b3b3b;
+$textSize: 16;
+
+//then import the core SCSS
+@import  "../node_modules/tabulator-tables/src/scss/tabulator.scss";
+
+.tabulator-row {
+  border-bottom-color: #3b3b3b;
+}
+
+.tabulator-row .tabulator-cell {
+  padding-top: .75em;
+  padding-bottom: .75em;
+}

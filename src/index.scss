@@ -1,0 +1,147 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  height: 100%;
+  background-color: #211E1F;
+  /*background-color: #2D1A22;*/
+  color: #F2F2F2;
+  width: 100%;
+}
+
+body > div:first-child {
+  text-align: right;
+  box-sizing: border-box;
+  border-bottom: 1px solid #3b3b3b;
+}
+
+body > div {
+  flex-direction: row;
+}
+
+.vial-brand-container {
+  height: 50px;
+  position: absolute;
+  top: 75px;
+  right: 25px;
+
+  & img {
+    height: 100%;
+    position: relative;
+    top: 17px;
+  }
+}
+
+.charts {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.charts > div:first-child {
+  width: 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.charts > div:last-child {
+  width: 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.charts > div:first-child > div:first-child {
+  height: 40%;
+  position: relative;
+}
+
+.charts > div:first-child > div:last-child {
+  flex: 1;
+  position: relative;
+}
+
+.charts > div:last-child > div:last-child {
+  height: 30%;
+  overflow: hidden;
+}
+
+.charts > div:last-child > div:first-child {
+  flex: 1;
+  position: relative;
+}
+
+.chart {
+  width: 100%;
+  height: 100%;
+}
+
+.help {
+  background-color: white;
+  color: #211E1F;
+  position: absolute;
+  height: 20px;
+  border-radius: 20px;
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bolder;
+  z-index: 1000;
+
+  div {
+    display: none;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 300px;
+    position: relative;
+    //opacity: .6;
+  }
+}
+
+.help:hover {
+  cursor: pointer;
+
+  div {
+    display: block;
+  }
+}
+
+#total-emissions-by-day + .help {
+  top: 50%;
+  right: -30px;
+  div {
+    top: -150px;
+    left: 40px;
+  }
+}
+
+#radial-emissions-summary + .help {
+  top: 70px;
+  left: 40px;
+  div {
+    top: -20px;
+    left: -20px;
+  }
+}
+
+#radial-heat-map + .help {
+  bottom: 140px;
+  right: 135px;
+  div {
+    top: -25px;
+    left: -250px;
+  }
+}
+
+.vial-brand-container .help {
+  left: 75%;
+  top: 0;
+  div {
+    top: -25px;
+    left: -250px;
+  }
+}
